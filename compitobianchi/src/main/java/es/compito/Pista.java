@@ -17,8 +17,10 @@ public class Pista {
         }
         persEntrate--;
         System.out.println(nome + " sale sul go-kart");
-        int t=4000 + (int) (Math.random()*6000);
-        System.out.println(nome + " il pilota occupa la pista per: " + t/1000 + "s");
+        int t=1000 + (int) (Math.random()*2000);
+        int giri = 1000 + (int)(Math.random()*5000);
+        int tGiri = (t/1000)*(giri/1000);
+        System.out.println(nome + " il pilota occupa la pista per: " + tGiri + "s");
         return t;
     }
 
